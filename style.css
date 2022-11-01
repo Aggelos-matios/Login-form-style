@@ -2,12 +2,16 @@ body,html{
   display: flex;
   padding: 0;
   margin: 0;
-  background-color: white;
   justify-content: center;
 }
 
+body {
+  background-image: url('/wallpapers/peakpx1.jpg');
+  background-repeat: no-repeat;
+}
+
 .site-container {
-  background-color: rgb(230, 230, 230);
+  background-color: rgba(255, 255, 255, 0.3);
   height: 100vh;
   width: 80vw;
 }
@@ -16,7 +20,7 @@ body,html{
   display: flex;
   justify-content:space-between;
   align-items: center;
-  background: rgb(38, 111, 160);
+  background: rgb(30, 32, 32);
 }
 
 .logo-name{
@@ -50,14 +54,15 @@ body,html{
   margin: 0px;
   color: black;
   height: 3px;
-  background-color: rgb(30, 32, 32);
-  border-color: rgb(30, 32, 32);
+  background-color: greenyellow;
+  border-color: greenyellow;
 }
 
 .main-container {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
+  margin-top: 150px;
 }
 
 .form-container {
@@ -101,8 +106,8 @@ input {
   margin-bottom: 10px;
   font-size: 20px;
   border-radius: 5px;
-  border: 1px solid rgb(255, 255, 255);
   background-color: greenyellow;
+  border: 1px solid rgb(255, 255, 255);
   color: black;
   font-weight: 600;
 }
@@ -120,7 +125,7 @@ input {
 }
 
 a{
-  color: lightyellow;
+  color: rgb(38, 111, 160);
   text-decoration: none;
 }
 
