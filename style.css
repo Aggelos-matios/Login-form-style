@@ -1,21 +1,146 @@
+/* GENERAL FLEX CLASSES */
+.display-flex{
+  display: flex;
+}
+.justify-center{
+  justify-items: center;
+}
+.justify-space{
+  justify-content:space-between;
+}
+.align-center{
+  align-items: center;
+}
+
+
+
+/* GENERAL COLOR PALET AND BACKGROUND */
+.background-basic-color{
+  background-color: white;
+}
+.background-secondary-color{
+  background-color: white;
+}
+.basic-color{
+  color: white;
+}
+.secondary-color{
+  color: white;
+}
+.third-color{
+  color: white;
+}
+.fourth-color{
+  color: white;
+}
+.basic-border{
+  border: 1px solid black;
+  border-radius: 0px;
+  border-color: black;
+}
+.secondary-border{
+  border: 1px solid black;
+  border-radius: 0px;
+  border-color: black;
+}
+
+
+/* DISTANSES - MARGINS - PADDINGS */
+.xs-padding{
+  padding: 5px;
+}
+.s-padding{
+  padding: 10px;
+}
+.m-padding{
+  padding: 50px;
+}
+.l-padding{
+  padding: 150px;
+}
+.xl-padding{
+  padding: 200px;
+}
+.xs-margin{
+  margin: 5px;
+}
+.s-margin{
+  margin: 10px;
+}
+.m-margin{
+  margin: 50px;
+}
+.l-margin{
+  margin: 150px;
+}
+.xl-margin{
+  margin: 200px;
+}
+/* custom top-bot-left-right paddings and margins */
+
+
+/* FONT SIZE - COLOR - WEIGHT */
+.font-xs-size{
+  font-size: x-small;
+}
+.font-s-size{
+  font-size: small;
+}
+.font-m-size{
+  font-size: medium;
+}
+.font-l-size{
+  font-size: large;
+}
+.font-xl-size{
+  font-size: x-large;
+}
+.font-weight-100{
+  font-weight: 100;
+}
+.font-weight-200{
+  font-weight: 200;
+}
+.font-weight-300{
+  font-weight: 300;
+}
+.font-weight-400{
+  font-weight: 400;
+}
+.font-weight-500{
+  font-weight: 500;
+}
+.font-weight-600{
+  font-weight: 600;
+}
+.font-weight-700{
+  font-weight: 700;
+}
+.font-weight-800{
+  font-weight: 800;
+}
+
+/* ANIMATIONS IDEAS */
+.transform{
+  transform: scale();
+  transform: rotate(0deg);
+  transform: translate(10px);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transform: matrix(0, 1, 1, 0, 0, 0);
+}
+
 body,html{
   padding: 0;
   margin: 0;
   height: auto;
+  width: auto;
 }
-
-body {
-  /*background-image: url('/wallpapers/purple.jpg');*/
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-color: lightgray;
-}
-
 .nav-container {
   display: flex;
   justify-content:space-between;
   align-items: center;
-  background: rgb(30, 32, 32);
+  background-color: rgb(30, 32, 32);
+  position:static;
 }
 
 .logo-name{
@@ -35,12 +160,14 @@ body {
   margin-right: 25px;
   transition:0.3s;
   border-radius: 5px;
+  transform: translate(0px);
 }
 
 .account-button:hover {
   color: white;
   cursor: pointer;
   transition:0.5s;
+  transform: translate(10px);
   background-color: black;
 }
 
@@ -53,18 +180,23 @@ body {
   border-color: greenyellow;
 }
 
-/* .main-container {
-  display: flex;
-  justify-content: center;
-} */
+.main-container {
+  display:flex;
+  justify-content: end;
+  align-items:center;
+  height: 100vh;
+  background-image: url('/wallpapers/minimal.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
 
 .form-container {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 450px;
   width: 350px;
-  margin-top: 100px;
   background-color:rgb(30, 32, 32);
   border: 3px solid greenyellow;
   border-radius: 20px;
