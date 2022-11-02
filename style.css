@@ -12,16 +12,14 @@
   align-items: center;
 }
 
-
-
 /* GENERAL COLOR PALET AND BACKGROUND */
-.background-basic-color{
-  background-color: white;
+.background-primary-color{
+  background-color: rgb(30, 32, 32);
 }
 .background-secondary-color{
   background-color: white;
 }
-.basic-color{
+.primary-color{
   color: white;
 }
 .secondary-color{
@@ -33,7 +31,7 @@
 .fourth-color{
   color: white;
 }
-.basic-border{
+.primary-border{
   border: 1px solid black;
   border-radius: 0px;
   border-color: black;
@@ -43,7 +41,6 @@
   border-radius: 0px;
   border-color: black;
 }
-
 
 /* DISTANSES - MARGINS - PADDINGS */
 .xs-padding{
@@ -120,6 +117,41 @@
   font-weight: 800;
 }
 
+/* HEIGHT - WIDTH SIZES */
+.xs-box-h{
+  height: 10px;
+}
+.s-box-h{
+  height: 50px;
+}
+.m-box-h{
+  height: 100px;
+}
+.l-box-h{
+  height: 300px;
+}
+.xl-box-h{
+  height: 500px;
+}
+.s-box-w{
+  width: 50px;
+}
+.m-box-w{
+  width: 100px;
+}
+.l-box-w{
+  width: 200px;
+}
+.xl-box-w{
+  width: 300px;
+}
+.auto-box-w{
+  width: auto;
+}
+.auto-box-h{
+  height: auto;
+}
+
 /* ANIMATIONS IDEAS */
 .transform{
   transform: scale();
@@ -184,11 +216,9 @@ body,html{
   display:flex;
   justify-content: end;
   align-items:center;
-  height: 100vh;
   background-image: url('/wallpapers/minimal.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
-
 }
 
 .form-container {
