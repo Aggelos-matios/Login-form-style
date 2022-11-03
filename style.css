@@ -1,12 +1,15 @@
 /* GENERAL FLEX CLASSES */
-.display-flex{
+.flex{
   display: flex;
+}
+.box{
+  display: block;
 }
 .justify-center{
   justify-items: center;
 }
 .justify-space{
-  justify-content:space-between;
+  justify-content: space-around;
 }
 .align-center{
   align-items: center;
@@ -214,8 +217,7 @@ body,html{
 
 .main-container {
   display:flex;
-  justify-content: end;
-  align-items:center;
+  justify-content: center;
   background-image: url('/wallpapers/minimal.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -226,7 +228,7 @@ body,html{
   justify-content: center;
   align-items: center;
   height: 450px;
-  width: 350px;
+  width: 380px;
   background-color:rgb(30, 32, 32);
   border: 3px solid greenyellow;
   border-radius: 20px;
@@ -246,7 +248,7 @@ input {
   display: flex;
   justify-content: center;
   width: auto;
-  margin: 0px auto 30px auto;
+  margin: 0px auto 20px auto;
   padding: 12px;
   border-radius: 8px;
   border: 1px solid rgb(255, 255, 255);
