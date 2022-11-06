@@ -16,12 +16,30 @@ body,html{
   height: 400px;
   width: 350px;
 }
+.icon{
+  border: 2px solid orange;
+  padding: auto;
+  margin-top: 15px;
+  
+}
 .form-box{
   display: block;
   border: 1px solid blue;
 }
-.form-box h2,h6 > {
+.form-box h2,p{
   border: 1px solid green;
+  padding: 0;
+  margin: 0;
 }
+.form-box input{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  padding: 8px;
+  
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
 
 
