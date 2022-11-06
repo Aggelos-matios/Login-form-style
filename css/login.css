@@ -1,7 +1,27 @@
-h2{
-  background-color: black;
-  color: aqua;
+body,html{
+  margin: 0;
+  height: auto;
+  width: auto;
+}
+.box{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .bar-container{
-  background-color: black;
+  display: block;
+  text-align: center;
+  border: 2px solid red;
+  height: 400px;
+  width: 350px;
 }
+.form-box{
+  display: block;
+  border: 1px solid blue;
+}
+.form-box h2,h6 > {
+  border: 1px solid green;
+}
+
+
