@@ -1,5 +1,7 @@
 h2{
-  margin-inline: 20%;
   background-color: black;
   color: aqua;
+}
+.bar-container{
+  background-color: black;
 }
