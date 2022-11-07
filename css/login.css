@@ -13,8 +13,10 @@ body,html{
   text-align: center;
   justify-content:center;
   padding: 8px;
+  width: 400px;
   box-shadow: 2px 2px 10px lightgrey;
   background-color: white;
+  position: absolute;
 }
 .form-title{
   font-size: x-large;
@@ -24,24 +26,46 @@ body,html{
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
+.wrong-values{
+  color: red;
+  visibility: hidden;
+  margin: 0em;
+}
 form{
   display: flex;
   flex-direction: column;
-  flex-basis: 150px;
   justify-content: space-between;
+  margin-top: 0em;
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+  margin-bottom: 1em;
 }
 form input{
-  padding: 1em 0.5em;
-  margin: 1em 0.5em;
+  padding-bottom: 0.3em;
+  margin-bottom:  1em;
+  margin-top: 1em;
   border: none;
-  border-bottom: 1px solid black;
-  font-size: 16px;
+  border-bottom: 2px solid grey;
+  transition: .4s;
+  font-size: 20px;
 }
 form input::placeholder{
-  color: blue;
+  font-size: 20px;
+  color: rgba(grey, 1);
+  transition: 0.6;
+}
+form input:focus{
+  outline: none;
+  border-bottom: 2px solid rgb(0, 100, 201);
+  transition: .4s;
+}
+form input:focus::placeholder{
+  color: rgba(0, 0, 0, 0);
+  transition: .6s;
 }
 .remember-checkbox{
-  align-self: flex-start;
+  width: 100%;
+  text-align: start;
 }
 form button{
   background-color: dodgerblue;

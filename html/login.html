@@ -14,15 +14,16 @@
     <div class="form-title">
       <span>Login to Your Account</span>
     </div>
-    
+
     <span>Enter your username & password to login</span>
+    <span class="wrong-values">*Incorrect Username or Password*</span>
 
     <form action="login">
-      <input type="text" placeholder="Username">
-      <input type="password" placeholder="Password">
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
       <div class="remember-checkbox">
-        <input type="checkbox">
-      <label>Remember me</label>
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
       </div>
       <button>Login</button>
     </form>
