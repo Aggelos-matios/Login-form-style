@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+body,html{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: rgb(247, 250, 255);
+  font-family: 'Nunito', sans-serif;
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  justify-content:center;
+  padding: 8px;
+  width: 400px;
+  box-shadow: 2px 2px 10px lightgrey;
+  background-color: white;
+  position: absolute;
+}
+.form-title{
+  font-size: x-large;
+  font-weight: 600;
+  color:rgb(0, 100, 201);
+  margin-top: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.wrong-values{
+  color: red;
+  visibility: hidden;
+  font-weight: 600;
+  margin: 0em;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 0em;
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+  margin-bottom: 1em;
+}
+form input{
+  padding-bottom: 0.3em;
+  margin-bottom:  1em;
+  margin-top: 1em;
+  border: none;
+  border-bottom: 2px solid grey;
+  transition: .4s;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+form input::placeholder{
+  font-size: 16px;
+  color: rgba(grey, 1);
+  transition: 0.6s;
+}
+form input:focus{
+  outline: none;
+  border-bottom: 2px solid rgb(0, 100, 201);
+  transition: .4s;
+}
+form input:focus::placeholder{
+  color: rgba(0, 0, 0, 0);
+  transition: .6s;
+}
+.remember-checkbox{
+  width: 100%;
+  text-align: start;
+}
+form button{
+  background-color: dodgerblue;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 5px;
+  padding: .8em;
+  margin-top: 1em;
+}
+form button:hover{
+  background-color: rgb(0, 100, 201);
+  cursor: pointer;
+}
+.login-form span{
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+.login-form a{
+  text-decoration: none;
+  color: rgb(0, 100, 201);
+}

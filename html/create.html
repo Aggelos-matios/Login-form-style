@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/login.css" type="text/css">
+  <link rel="stylesheet" href="../css/create.css" type="text/css">
   <title>Login</title>
 </head>
 <body>
@@ -12,25 +12,31 @@
   <div class="login-form">
     
     <div class="form-title">
-      <span>Login to Your Account</span>
+      <span>Create Account</span>
     </div>
 
-    <span>Enter your username & password to login</span>
-    <span class="wrong-values">Incorrect Username or Password</span>
+    <span>Enter your personal details to create account</span>
+    <span class="wrong-values">All steps required</span>
 
     <form action="login">
-      <input type="text" placeholder="Username" required>
+      <input type="text" placeholder="Name" required>
+      <input type="text" placeholder="Email" required>
       <input type="password" placeholder="Password" required>
+      <input type="text" placeholder="Confirm Password" required>
       <div class="remember-checkbox">
         <input type="checkbox" id="remember">
         <label for="remember">Remember me</label>
+      </div>
+      <div class="Terms">
+        <input type="checkbox" id="terms">
+        <label for="terms">I agree and accept the terms and conditions</label>
       </div>
       <button>Login</button>
     </form>
 
     <span>
       Don't have account?
-      <a href="create.html">Create an account</a>
+      <a href="login.html">login here</a>
     </span>
 
   </div>
