@@ -62,10 +62,14 @@ form input:focus{
   transition: .4s;
 }
 form input:focus::placeholder{
-  color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 1);
+
   transition: .6s;
+  transform: translateY(-10px);
+  /* transform: scaleX(-0.5); */
 }
-.remember-checkbox{
+.remember-checkbox,
+.terms{
   width: 100%;
   text-align: start;
 }
@@ -90,5 +94,9 @@ form button:hover{
 }
 .login-form a{
   text-decoration: none;
+  color: rgb(0, 100, 201);
+}
+.login-form a:hover{
+  text-decoration:underline;
   color: rgb(0, 100, 201);
 }

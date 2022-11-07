@@ -92,3 +92,7 @@ form button:hover{
   text-decoration: none;
   color: rgb(0, 100, 201);
 }
+.login-form a:hover{
+  text-decoration:underline;
+  color: rgb(0, 100, 201);
+}

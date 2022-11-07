@@ -12,24 +12,27 @@
   <div class="login-form">
     
     <div class="form-title">
-      <span>Create Account</span>
+      <span>Create an Account</span>
     </div>
 
     <span>Enter your personal details to create account</span>
     <span class="wrong-values">All steps required</span>
 
     <form action="login">
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <input type="password" placeholder="Confirm Password" required>
+      <input type="text" placeholder="Name" id="name" required>
+      <label for="name">Name</label>
+      <input type="email" placeholder="Email" id="email" required>
+      
+      <input type="password" placeholder="Password" id="password" required>
+      <input type="password" placeholder="Confirm Password" id="confirm-password" required>
       <div class="remember-checkbox">
         <input type="checkbox" id="remember">
         <label for="remember">Remember me</label>
       </div>
-      <div class="Terms">
+      <div class="terms">
         <input type="checkbox" id="terms">
-        <label for="terms">I agree and accept the terms and conditions</label>
+        <label for="terms">I agree and accept the </label>
+        <a href="">terms and conditions</a>
       </div>
       <button>Login</button>
     </form>
