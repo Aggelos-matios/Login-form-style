@@ -61,6 +61,7 @@ form input:focus{
   border-bottom: 2px solid rgb(0, 100, 201);
   transition: .4s;
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .name-label, .email-label,
 .pass-label, .confirm-pass-label{
   color:black;
@@ -73,7 +74,6 @@ form input:focus{
 .pass-label:hover, .confirm-pass-label:hover{
   font-weight: 600;
 }
-
 .terms{
   width: 100%;
   display: block;
