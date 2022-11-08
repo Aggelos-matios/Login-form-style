@@ -9,15 +9,15 @@ body,html{
 .login-form{
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   text-align: center;
   justify-content:center;
   padding: 8px;
   width: 400px;
   box-shadow: 2px 2px 10px lightgrey;
+  border-radius: 10px;
   background-color: white;
   position: absolute;
-}
+} 
 .form-title{
   font-size: x-large;
   font-weight: 600;
@@ -36,42 +36,49 @@ form{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 0em;
   margin-left: 1.3em;
   margin-right: 1.3em;
   margin-bottom: 1em;
 }
+form div{
+  display: flex;
+  flex-direction: column;
+}
+div label{
+  text-align: start;
+}
 form input{
   padding-bottom: 0.3em;
-  margin-bottom:  1em;
-  margin-top: 1em;
+  margin-bottom:  2em;
   border: none;
   border-bottom: 2px solid grey;
   transition: .4s;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 1.5px;
-}
-form input::placeholder{
-  font-size: 16px;
-  color: rgba(grey, 1);
-  transition: 0.6s;
 }
 form input:focus{
   outline: none;
   border-bottom: 2px solid rgb(0, 100, 201);
   transition: .4s;
 }
-form input:focus::placeholder{
-  color: rgba(0, 0, 0, 1);
-
-  transition: .6s;
-  transform: translateY(-10px);
-  /* transform: scaleX(-0.5); */
+.name-label, .email-label,
+.pass-label, .confirm-pass-label{
+  color:black;
 }
-.remember-checkbox,
+.name-label:hover, .email-label:hover,
+.pass-label:hover, .confirm-pass-label:hover{
+  color:rgb(0, 100, 201);
+}
+.name-label:active, .email-label:hover,
+.pass-label:hover, .confirm-pass-label:hover{
+  font-weight: 600;
+}
+
 .terms{
   width: 100%;
+  display: block;
   text-align: start;
+  height: 1.5rem;
 }
 form button{
   background-color: dodgerblue;
@@ -81,7 +88,7 @@ form button{
   letter-spacing: 2px;
   border: none;
   border-radius: 5px;
-  padding: .8em;
+  padding: 0.8em;
   margin-top: 1em;
 }
 form button:hover{
@@ -99,4 +106,4 @@ form button:hover{
 .login-form a:hover{
   text-decoration:underline;
   color: rgb(0, 100, 201);
-}
+} 
