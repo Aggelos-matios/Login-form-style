@@ -1,27 +1,82 @@
-body,html{
-  margin: 0;
-  height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+  font-family: 'Nunito', sans-serif;
 }
-.nav-bar{
+body{
+  margin: 0;
+}
+
+/* HERE IS THE TEMPLATE LAYOUT */
+.grid-platform{
+  display: grid;
+  grid-template:'nvbr nvbr nvbr'
+                'data menu menu';
+  gap: 10px;
+}
+.grid-platform > div{
+  /* border: 2px solid rgb(47, 255, 220); */
+  /* background-color: rgb(44, 171, 255); */
+  /* text-align: center; */
+}
+.content{
+  grid-area: menu;
+  /* border: 2px solid red; */
+  height: 82.3vh;
+}
+.actions{
+  grid-area: data;
+  /* border: 2px solid greenyellow; */
+}
+
+
+/* HERE IS THE TOP BAR MENU */
+.navbar{
+  grid-area: nvbr;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0em 2em;
-  /* border: 2px solid red; */
-  position: sticky;
+  padding-left: 15%;
+  padding-right: 15%;
   background-color: rgb(0, 100, 201);
-  box-shadow: 0px 4px 10px gray;
   color: white;
+  box-shadow: 0px 10px 10px lightgray;
+
 }
-div, .material-symbols-outlined, h2{
-  border: 2px solid greenyellow;
-  
-}
-.search-bar{
+/* .navbar > div{
+  border: 1px solid red;
+} */
+
+/* HERE IS THE SEARCH BAR */
+.search{
   display: flex;
+  justify-content: center;
   align-items: center;
-  /* gap: .5em; */
 }
-.content{
-  height: 200vh;
+.search input{
+  height: 30px;
+  width: 300px;
+  outline: none;
+  font-size: 14px;
+  padding-left: .5em;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
 }
+.search span{
+  background-color: white;
+  color: rgb(0, 100, 201);
+  padding: 4px 10px 4px 10px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+/* HERE ARE THE ACCOUNT ICONS */
+.icons{
+  display: flex;
+}
+
+
+
+
+
+
+
+
